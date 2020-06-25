@@ -188,11 +188,22 @@
     // it takes in 1 string parameter. The parameter is the full id of the 'show' button
     // @Param 1 is in the format "show-{number}" where {number} is the verse number
     // when called, it prints ("verse and reference {number} should be shown")
+    function showVerseContentAndReferenceWhenButtonClicked (showButtonFullId){
+      let verseNumber = showButtonFullId.split("show")[1]
+      let contentElement = document.getElementbyId(`${versenumber}-content`)
+      let referenceElement - document.getElementbyId(`${verseNumber}-reference`)
+      contentElement.style.visibility = "visible";
+      referenceElement.style.visibility - "visible";
+
+    }
 
     // H.3-2: write a function called `hideVerseContentAndReferenceWhenButtonClicked` that does the following
     // it takes in 1 string parameter. The parameter is the full id of the 'hide' button
     // @Param 1 is in the format "hide-{number}" where {number} is the verse number
     // when called, it prints ("verse and reference {number} should be hidden")
+    function hideVerseContentAndReferenceWhenButtonClicked(showButtonFullId){
+      let 
+    }
 
     // H.3-3: write a function called `toggleVerseContentVisibility` that does the following
     // it takes in 2 string parameters the first parameter is the full name of the verse content, the second is its visibility
